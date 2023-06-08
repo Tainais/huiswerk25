@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="utf-8">
+        <title>Mijn webpagina</title>
+        <script
+        src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function() {
+        $("#knop").click(function() {
+        var naam = $("#idTekstveld1").val();
+        var top1 = $("#idTekstveld2").val();
+        var top2 = $("#idTekstveld3").val();
+        var top3 = $("#idTekstveld4").val();
+        window.alert(
+        "Mijn naam is " + naam +
+        " en mijn nummer één vakantiebestemming is " + top1 +
+        " daarna " + top2 + " en op nummer drie staat " + top3
+        );
+        });
+        });
+        </script>
+    </head>
+    <body>
+        <form>
+        <h2>Vragenlijst vakantiebestemmingen</h2>
+        <P>Wij zijn benieuwd naar uw top 3 vakantiebestemmingen.<br>
+        Vul de tekstvelden hierbeneden en druk op de knop</p>
+        Wat is uw naam?
+        <input type="text" id="idTekstveld1"><br><br>
+        Wat is uw top 1 vakantiebestemming?
+        <input type="text" id="idTekstveld2"><br><br>
+        Wat is uw top 2 vakantiebestemming?
+        <input type="text" id="idTekstveld3"><br><br>
+        Wat is uw top 3 vakantiebestemming?
+        <input type="text" id="idTekstveld4"><br><br>
+        <input id="knop" name="knop" type="button"
+        value="Klik hier">
+        </form>
+        <noscript>Om deze website optimaal te gebruiken is het noodzakelijk om JavaScript te activeren.</noscript>
+    </body>
+</html>
